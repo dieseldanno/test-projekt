@@ -11,6 +11,11 @@ body {
     background-size: cover;
 }
 
+header {
+    display: flex;
+    padding: 10px;
+  }
+
 .material-symbols-outlined {
   background-color: purple;
 }
@@ -27,5 +32,3 @@ h1 {
   align-items: center;
   justify-content: flex-end;
 }
-
-

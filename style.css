@@ -1,6 +1,14 @@
-header {
-  display: flex;
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/dimma.jpg);
+  background-size: cover;
 }
 
 .material-symbols-outlined {
@@ -18,4 +26,13 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+}
+header h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@mixin frame($height, $width, $background-color, $opacity) {
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+    opacity: $opacity;
+}
+
+@mixin desktop (){
+    @media(min-width:1080px) {
+        @content;
+    }
+}
