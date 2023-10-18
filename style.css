@@ -7,8 +7,22 @@
 body {
   height: 100vh;
   width: 100%;
+}
+body .wrapper {
+  height: 100vh;
   background-image: url(/img/dimma.jpg);
   background-size: cover;
+}
+body .wrapper main {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper main h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
 }
 
 header {

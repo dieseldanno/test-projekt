@@ -7,6 +7,24 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(/img/dimma.jpg);
-    background-size: cover;
+    .wrapper {
+        height: 100vh;
+        background-image: url(/img/dimma.jpg);
+        background-size: cover;
+        main {
+            height: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                color:$startColor;
+                font-size: 2.5rem;
+                font-family: $startFont;
+            }
+        }
+    }
 }
+
+
+
+
