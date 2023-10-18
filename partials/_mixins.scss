@@ -19,6 +19,6 @@
 
 @mixin show () {
     @media(min-width: 800px) {
-        display: block;
+        // display: block;
     }
 }
