@@ -18,5 +18,31 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+
+        @include desktop {
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+nav {
+    @include hide;
+    @include show;
+    // background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        // margin: auto;
+        padding: 10px;
+        font-family: $mainFont;
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: $mainColor;
+        text-decoration: none;
     }
 }

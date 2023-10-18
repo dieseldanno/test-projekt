@@ -44,6 +44,36 @@ header .icons {
   align-items: center;
   justify-content: flex-end;
 }
+@media (min-width: 800px) {
+  header .icons .menu {
+    display: none;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 799px) {
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  nav {
+    display: block;
+  }
+}
+nav a {
+  padding: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #1E1E1E;
+  text-decoration: none;
+}
 
 footer {
   position: absolute;
