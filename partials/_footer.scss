@@ -9,13 +9,60 @@ footer {
 
     .footer-links, .copyright {
         font-family: $mainFont;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         font-weight: bold;
     }
 
     a {
         color: $mainColor;
         text-decoration: none;
+        margin: 5px;
+    }
+
+
+    .perfume, .facebook, .instagram {
+        @include hide;
+        // @include show;
+        height: 40px;
+        width: 40px;
     }
 
   }
+
+// .main-footer {
+//     display: inline-block;
+// }
+
+// footer {
+    // @include hide;
+    // @include show-footer;
+
+@include desktop {
+    footer {
+        padding: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .footer-links {
+            display: flex;
+            order: 1;
+        
+        }
+
+        .copyright {
+            display: flex;
+            order: -1;
+            align-items: center;
+        
+        }
+
+        .social-media {
+            display: flex;
+            order: 2;
+            gap: 10px;
+
+        }
+    }
+}
