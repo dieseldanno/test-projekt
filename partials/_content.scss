@@ -18,12 +18,13 @@ body {
             align-items: center;
             h2 {
                 color:$startColor;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-family: $startFont;
+                margin-left: 10px;
             }
             @include desktop {
                 h2 {
-                    font-size: 4rem;
+                    font-size: 5rem;
                 }
             }
         }
