@@ -23,7 +23,7 @@ body {
             
             aside {
                 background-color: #D9D9D9;
-                height: 30rem;
+                height: min-content;
                 width: 15rem;
 
                 h2 {
@@ -61,6 +61,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 }
+
             .imgContainer {
                 height: 20rem;
                 width: 15rem;
@@ -72,14 +73,17 @@ body {
                 object-fit: cover;
             }
            
-            h5 {
-                padding: 0.5rem;
-                font-size: 1.2rem;
-                text-align: center;
+            h3, h4, p {
+                margin: 0.3rem;
             }
-            p {
-                margin: 1rem;
+
+            h4 {
+                color: #575555;
             }
+            .contact {
+                font-weight: bold;
+            }
+
             @include desktop {
 
                     height:100vh;
@@ -93,7 +97,7 @@ body {
                     background-color: #D9D9D9;
                     width: 40%;
                     margin-left: 7rem;
-                    margin-bottom: 5rem;
+                    margin-bottom: 7rem;
                     border-radius: 1rem;
                 }
                 .cardContainer {
