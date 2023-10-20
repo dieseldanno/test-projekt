@@ -16,7 +16,23 @@ footer {
     a {
         color: $mainColor;
         text-decoration: none;
-        margin: 5px;
+        margin: 10px;
+    }
+
+    @include desktop {
+        a {
+            text-decoration: none;
+            color: $mainColor;
+            font-weight: bold;
+            &:visited {
+                color: $mainColor;
+                text-decoration: none;
+                }
+            &:hover {
+                transform: scale(1.2)
+            }
+
+            }
     }
 
 
