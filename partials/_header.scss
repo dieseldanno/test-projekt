@@ -21,11 +21,31 @@ header {
         justify-content: flex-end;
 
 
-        @include desktop {
-            .menu {
-                display: none;
+    @include desktop {
+        .menu {
+            display: none;
             }
         }
+    }
+
+    @include desktop {
+        .active {
+            text-decoration: underline;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $mainColor;
+            font-weight: bold;
+            &:visited {
+                color: $mainColor;
+                text-decoration: none;
+                }
+            &:hover {
+                transform: scale(1.2)
+            }
+
+            }
     }
 }
 
