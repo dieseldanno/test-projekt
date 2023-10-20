@@ -152,10 +152,14 @@ body {
             flex-direction: column;
             align-items: center;
             gap: 3px;
+
+            .dropdown-menu {
+                cursor: pointer;
+            }
     
         }
 
-        .buy-btn, .view-btn {
+        .buy-btn {
             &:hover {
                 opacity: 0.8;
             }

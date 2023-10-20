@@ -128,7 +128,10 @@ body .wrapper .product-wrapper {
     align-items: center;
     gap: 3px;
   }
-  .product-wrapper .buy-btn:hover, .product-wrapper .view-btn:hover {
+  .product-wrapper .dropdown .dropdown-menu {
+    cursor: pointer;
+  }
+  .product-wrapper .buy-btn:hover {
     opacity: 0.8;
   }
 }
