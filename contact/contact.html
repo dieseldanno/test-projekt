@@ -30,13 +30,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="index.html">THE MIST</a></h1>
+        <h1><a href="/index.html">THE MIST</a></h1>
         <nav>
-          <a href="#">HOME</a>
+          <a href="/index.html">HOME</a>
           <a href="products/products.html">PRODUCTS</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
-          <a href="#">REVIEWS</a>
+          <a href="/about/about.html">ABOUT</a>
+          <a href="/contact/contact.html" class="active">CONTACT</a>
+          <a href="/reviews/reviews.html">REVIEWS</a>
         </nav>
         <div class="icons">
           <span class="material-symbols-outlined shopping-bag">
@@ -45,28 +45,40 @@
           <span class="material-symbols-outlined menu"> menu </span>
         </div>
       </header>
+      <div class="h2-container">
+        <h2>CONTACT DETAILS</h2>
+      </div>
       <div class="container">
         <article>
           <img src="/img/office-pic.jpg" alt="outside of a perfume shop" />
+          <div class="adress-text">
+            <h3>THE MIST PERFUMERY</h3>
+            <address>
+              PARFYMGATAN 505 <br />
+              111 111 STOCKHOLM <br />
+              SWEDEN <br />
+            </address>
+            <br />
+            <p>08-00112233</p>
+            <br />
+            <p>OPENING HOURS</p>
+            <p>MON-FRI 11-18</p>
+            <p>SAT 11-16</p>
+          </div>
         </article>
-        <h2>THE MIST PERFUMERY</h2>
-        <div class="adress-text">
-          <address>
-            PARFYMGATAN 505 <br />
-            111 111 STOCKHOLM <br />
-            SWEDEN <br />
-          </address>
-          <br />
-          <p>08-00112233</p>
-          <br />
-          <p>OPENING HOURS</p>
-          <p>MON-FRI 11-18</p>
-          <p>SAT 11-16</p>
-        </div>
         <form action="">
+          <h4>Contact us</h4>
           <fieldset>
-            <input type="text" name="name" id="" required placeholder="Name" />
             <input
+              class="name-email"
+              type="text"
+              name="name"
+              id=""
+              required
+              placeholder="Name"
+            />
+            <input
+              class="name-email"
               type="email"
               name="email"
               id=""
@@ -93,19 +105,20 @@
               name=""
               id=""
               cols="30"
-              rows="10"
+              rows="8"
               placeholder="What would you like to discuss?"
             ></textarea>
           </fieldset>
+          <input type="submit" value="Submit" />
         </form>
       </div>
       <footer>
         <div class="footer-links">
-          <a href="#">HOME</a>
-          <a href="#">PRODUCTS</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
-          <a href="#">REVIEWS</a>
+          <a href="/index.html">HOME</a>
+          <a href="/products/products.html">PRODUCTS</a>
+          <a href="/about/about.html">ABOUT</a>
+          <a href="/contact/contact.html">CONTACT</a>
+          <a href="/reviews/reviews.html">REVIEWS</a>
         </div>
         <div class="copyright">
           <img src="/img/perfume.png" alt="perfume logo" class="perfume" />
