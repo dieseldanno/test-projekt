@@ -176,19 +176,18 @@ header .icons {
     transform: scale(1.2);
   }
 }
-
-nav {
+header nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 799px) {
-  nav {
+  header nav {
     display: none;
   }
 }
-nav a {
+header nav a {
   margin: 10px;
   padding: 3px;
   font-family: "Space Grotesk", sans-serif;

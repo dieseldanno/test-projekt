@@ -8,10 +8,11 @@ header {
         width: 100%;
         font-family: $mainFont;
         font-size: $mainFontSize;
-    }
-  .material-symbols-outlined {
-        margin: 8px;
-    }
+       }
+       
+        .material-symbols-outlined {
+         margin: 8px;
+         }
    
     .icons {
         width: 100%;
@@ -31,21 +32,22 @@ header {
     @include desktop {
         .active {
             text-decoration: underline;
-        }
-    
-        a {
-            text-decoration: none;
-            color: $mainColor;
-            font-weight: bold;
-            &:visited {
-                color: $mainColor;
-                text-decoration: none;
-                }
-            &:hover {
-                transform: scale(1.2)
-            }
+           }
 
-            }
+            a {
+             text-decoration: none;
+             color: $mainColor;
+             font-weight: bold;
+            
+
+                &:visited {
+                    color: $mainColor;
+                    text-decoration: none;
+                    }
+                &:hover {
+                    transform: scale(1.2)
+                }
+             
     }
 }
 
@@ -68,4 +70,5 @@ nav {
         color: $mainColor;
         text-decoration: none;
     }
+}
 }
