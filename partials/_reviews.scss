@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    .wrapper {
+        position: relative;
+        min-height: 100vh;
+        // background-image: url(/img/dimma.jpg);
+        background-size: cover;
+        h2 {
+        font-family:$mainFont;
+        text-align: center;
+        padding: 1rem;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 3rem;
+
+            .cardContainer {
+                height: min-content;
+                width: max-content;
+                background-color:$frameColor;
+                border-radius: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                opacity: 0.9;
+                margin-bottom: 2rem;
+            }
+            .card {
+                width: 20rem;
+                height: 10rem;
+                padding: 1rem;
+                background-color: white;
+                border-radius: 0.5rem;
+                box-shadow: 5px 5px 10px grey;
+
+            }
+             h3 {
+                font-size: 1rem;
+            }
+            h3, p {
+                font-family: $startFont;
+            }
+            h3, span, p {
+                padding: 0.2rem;
+                // font-family: $startFont;
+            }
+            .checked {
+                color: #e6d114;
+            }
+            .cardtop {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p {
+                font-size: 0.8rem;
+               margin-top: 1rem;
+            }
+
+            @include desktop {
+                .cardContainer {
+                    height: 37rem;
+                    width: 90%;
+                    justify-content: space-evenly;
+                    // justify-content: center;
+                    align-items: center;
+
+                    .card {
+                        width: 25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
