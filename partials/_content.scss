@@ -9,22 +9,48 @@ body {
     width: 100%;
     .wrapper {
         height: 100vh;
-        background-image: url(/img/dimma.jpg);
+        background-image: url(./img/dimma.jpg);
         background-size: cover;
         main {
             height: 75%;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            
             h2 {
-                color:$startColor;
-                font-size: 3rem;
-                font-family: $startFont;
-                margin-left: 10px;
+                 color:$startColor;
+                 font-size: 3rem;
+                 font-family: $startFont;
+                 margin-left: 10px;
+             }
+             .cta-button {
+                    background-color: $mainColor;
+                    color: $startColor;
+                    border: 2px solid white;
+                    padding: 15px 50px;
+                    margin: 10px;
+                    margin-top: 4.2rem;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    
             }
             @include desktop {
                 h2 {
                     font-size: 5rem;
+                }
+                .cta-button {
+                    background: none;
+                    margin-top: 1.2rem;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $mainColor;
+                        transform: scale(1.1)
+                    }
                 }
             }
         }
