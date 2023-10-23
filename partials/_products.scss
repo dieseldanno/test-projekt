@@ -23,13 +23,13 @@ body {
 }
 
 
-.h1-container {
+.h2-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 15px;
 
-    h1 {
+    h2 {
         font-family: $mainFont;
         font-size: 2.8rem;;
         letter-spacing: 5px;
@@ -80,34 +80,21 @@ body {
         }
     }
 
-    h2 { 
+    h3 { 
         font-size: 1.5rem;
         margin: 5px;
         text-align: center;
     }
 
-    h3{
+    h4 {
         font-size: 0.7rem;
         margin: 5px;
         text-align: center;
         font-style: italic;
     }
 
-    h4 {
-        font-size: 1.2rem;
-        margin: 5px;
-        text-align: center;
-        // color: $priceColor;
-    }
-
     .buy-btn {
-        background-color: $mainColor;
-        color: $startColor;
-        border: none;
-        padding: 10px 20px;
-        margin: 10px;
-        cursor: pointer;
-        border-radius: 5px;
+        @include button-style
     }
 
     .dropdown-menu {
