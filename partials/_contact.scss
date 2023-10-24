@@ -12,9 +12,9 @@ body {
 
     .wrapper {
         position: relative;
-        padding-bottom: 2.5rem;
+        height: 100vh;
         }
-         .wrapper::before { 
+    .wrapper::before { 
         content: ""; 
         position: absolute; 
         top: 0px; 
