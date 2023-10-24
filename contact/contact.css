@@ -12,7 +12,19 @@ body {
 }
 body .wrapper {
   position: relative;
-  min-height: 100vh;
+  padding-bottom: 2.5rem;
+}
+body .wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(../img/dimma.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
 }
 body .h2-container {
   display: flex;
