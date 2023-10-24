@@ -17,6 +17,11 @@ footer {
         color: $mainColor;
         text-decoration: none;
         margin: 10px;
+
+        &:visited {
+            color: $mainColor;
+            text-decoration: none;
+            }
     }
 
     @include desktop {
