@@ -9,14 +9,23 @@ body {
   width: 100%;
 }
 body .wrapper {
-  height: -moz-min-content;
-  height: min-content;
-  background-image: url(/img/dimma.jpg);
-  background-size: cover;
   position: relative;
-  min-height: 100vh;
 }
-body .wrapper main {
+body .wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* Specify the background image to be used */
+  background-image: url(../img/dimma.jpg);
+  background-size: cover;
+  /* Specify the background image */
+  opacity: 0.5;
+  z-index: -1;
+}
+body main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,30 +33,34 @@ body .wrapper main {
   gap: 2rem;
   padding-bottom: 3rem;
 }
-body .wrapper main aside {
+body main aside {
   background-color: #D9D9D9;
   height: -moz-min-content;
   height: min-content;
   width: 15rem;
+  box-shadow: 5px 5px 10px grey;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-body .wrapper main aside h2 {
+body main aside h2 {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
   padding: 1rem;
 }
-body .wrapper main aside p {
+body main aside p {
   padding: 0.9rem;
   font-size: 0.9rem;
   font-family: "Inter", sans-serif;
 }
-body .wrapper main aside .quote {
+body main aside .quote {
   padding: 0.5rem;
   font-size: 1.2rem;
   font-family: "Space Grotesk", sans-serif;
   font-style: italic;
 }
-body .wrapper main .cardContainer {
+body main .cardContainer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -57,54 +70,55 @@ body .wrapper main .cardContainer {
   width: -moz-max-content;
   width: max-content;
 }
-body .wrapper main .card {
+body main .card {
   width: 15rem;
   height: 20rem;
   background-color: #D9D9D9;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px 10px grey;
 }
-body .wrapper main .imgContainer {
+body main .imgContainer {
   height: 20rem;
   width: 15rem;
   overflow: hidden;
 }
-body .wrapper main .card-img-top {
+body main .card-img-top {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .wrapper main h3, body .wrapper main h4, body .wrapper main p {
+body main h3, body main h4, body main p {
   margin: 0.3rem;
 }
-body .wrapper main h4 {
+body main h4 {
   color: #575555;
 }
-body .wrapper main .contact {
+body main .contact {
   font-weight: bold;
 }
 @media (min-width: 800px) {
-  body .wrapper main {
+  body main {
     height: 100vh;
     width: 100%;
     flex-direction: row;
     gap: 0.5rem;
   }
-  body .wrapper main h2 {
+  body main h2 {
     font-size: 5rem;
   }
-  body .wrapper main aside {
+  body main aside {
     background-color: #D9D9D9;
-    height: -moz-min-content;
-    height: min-content;
-    width: 40%;
+    height: 80%;
+    width: auto;
+    max-width: 20%;
     margin-left: 7rem;
     margin-bottom: 7rem;
     border-radius: 1rem;
   }
-  body .wrapper main .cardContainer {
+  body main .cardContainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

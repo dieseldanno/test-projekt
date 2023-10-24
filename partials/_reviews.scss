@@ -9,9 +9,23 @@ body {
     width: 100%;
     .wrapper {
         position: relative;
-        min-height: 100vh;
-        // background-image: url(/img/dimma.jpg);
-        background-size: cover;
+        }
+         .wrapper::before { 
+        content: ""; 
+        position: absolute; 
+        top: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        left: 0px; 
+
+        /* Specify the background image to be used */ 
+        background-image: url( ../img/dimma.jpg); 
+        background-size: cover; 
+
+        /* Specify the background image */ 
+        opacity: 0.5; 
+        z-index:-1;
+        } 
         h2 {
         font-family:$mainFont;
         text-align: center;
@@ -26,7 +40,7 @@ body {
             .cardContainer {
                 height: min-content;
                 width: max-content;
-                background-color:$frameColor;
+                // background-color:$frameColor;
                 border-radius: 0.5rem;
                 display: flex;
                 flex-direction: column;
@@ -37,6 +51,7 @@ body {
                 margin-bottom: 2rem;
             }
             .card {
+
                 width: 20rem;
                 height: 10rem;
                 padding: 1rem;
@@ -65,7 +80,7 @@ body {
 
             p {
                 font-size: 0.8rem;
-               margin-top: 1rem;
+                margin-top: 1rem;
             }
 
             @include desktop {
@@ -83,7 +98,7 @@ body {
             }
         }
     }
-}
+
 
 
 

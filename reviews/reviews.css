@@ -10,26 +10,37 @@ body {
 }
 body .wrapper {
   position: relative;
-  min-height: 100vh;
-  background-size: cover;
 }
-body .wrapper h2 {
+body .wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* Specify the background image to be used */
+  background-image: url(../img/dimma.jpg);
+  background-size: cover;
+  /* Specify the background image */
+  opacity: 0.5;
+  z-index: -1;
+}
+body h2 {
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
   padding: 1rem;
 }
-body .wrapper main {
+body main {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
 }
-body .wrapper main .cardContainer {
+body main .cardContainer {
   height: -moz-min-content;
   height: min-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: #D9D9D9;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -39,7 +50,7 @@ body .wrapper main .cardContainer {
   opacity: 0.9;
   margin-bottom: 2rem;
 }
-body .wrapper main .card {
+body main .card {
   width: 20rem;
   height: 10rem;
   padding: 1rem;
@@ -47,34 +58,34 @@ body .wrapper main .card {
   border-radius: 0.5rem;
   box-shadow: 5px 5px 10px grey;
 }
-body .wrapper main h3 {
+body main h3 {
   font-size: 1rem;
 }
-body .wrapper main h3, body .wrapper main p {
+body main h3, body main p {
   font-family: "Inter", sans-serif;
 }
-body .wrapper main h3, body .wrapper main span, body .wrapper main p {
+body main h3, body main span, body main p {
   padding: 0.2rem;
 }
-body .wrapper main .checked {
+body main .checked {
   color: #e6d114;
 }
-body .wrapper main .cardtop {
+body main .cardtop {
   display: flex;
   justify-content: space-between;
 }
-body .wrapper main p {
+body main p {
   font-size: 0.8rem;
   margin-top: 1rem;
 }
 @media (min-width: 800px) {
-  body .wrapper main .cardContainer {
+  body main .cardContainer {
     height: 37rem;
     width: 90%;
     justify-content: space-evenly;
     align-items: center;
   }
-  body .wrapper main .cardContainer .card {
+  body main .cardContainer .card {
     width: 25rem;
   }
 }
