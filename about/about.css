@@ -15,7 +15,6 @@ body .wrapper {
   background-position: center;
   background-size: cover;
 }
-
 body .wrapper main {
   display: flex;
   justify-content: center;
