@@ -18,10 +18,8 @@ body .wrapper::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  /* Specify the background image to be used */
   background-image: url(../img/dimma.jpg);
   background-size: cover;
-  /* Specify the background image */
   opacity: 0.5;
   z-index: -1;
 }
@@ -46,8 +44,8 @@ body main aside {
 body main aside h2 {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
 }
 body main aside p {
   padding: 0.9rem;

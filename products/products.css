@@ -40,9 +40,10 @@ body .product-wrapper {
   margin-bottom: 15px;
 }
 .h2-container h2 {
+  text-align: center;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2.8rem;
-  letter-spacing: 5px;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
 }
 
 .p-container {
