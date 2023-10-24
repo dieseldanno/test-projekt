@@ -60,11 +60,17 @@ body {
                 font-family: $startFont;
             }
             h3, span, p {
-                padding: 0.2rem;
-                // font-family: $startFont;
+                // padding: 0.2rem;
+                font-family: $startFont;
             }
             .checked {
                 color: #e6d114;
+            }
+
+            .alias {
+                font-size: 0.8rem;
+                margin-top: 0;
+                color: $mainColor;
             }
             .cardtop {
                 display: flex;
@@ -73,7 +79,7 @@ body {
 
             p {
                 font-size: 0.8rem;
-                margin-top: 1rem;
+                margin-top: 2rem;
             }
 
             @include desktop {
@@ -82,7 +88,6 @@ body {
                     width: 90%;
                     flex-direction: row;
                     justify-content: space-evenly;
-                    // justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
 
