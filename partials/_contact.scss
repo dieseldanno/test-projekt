@@ -9,23 +9,37 @@ body {
     width: 100%;
     font-family: $startFont;
     color: $mainColor;
+    // background: url(/img/dimma3.png);
+    // background-size: cover;
+    // height: 100%;
 
     .wrapper {
         position: relative;
-        height: 100vh;
-        }
-    .wrapper::before { 
-        content: ""; 
-        position: absolute; 
-        top: 0px; 
-        right: 0px; 
-        bottom: 0px; 
-        left: 0px; 
-        background-image: url( ../img/dimma.jpg); 
-        background-size: cover; 
-        opacity: 0.5; 
-        z-index:-1;
-        } 
+        min-height: 100vh;
+        background-image: url(/img/dimma3.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    // .wrapper {
+    //     position: relative;
+    //     min-height: 100vh;
+        // background-image: url(/img/dimma3.png);
+        // background-position: center center;
+        // background-size: cover;
+        // }
+    // .wrapper::before { 
+    //     content: ""; 
+    //     position: absolute; 
+    //     top: 0px; 
+    //     right: 0px; 
+    //     bottom: 0px; 
+    //     left: 0px; 
+    //     background-image: url( ../img/dimma.jpg);
+    //     background-size: cover; 
+    //     opacity: 0.5; 
+    //     z-index:-1;
+    //     } 
 
         .h2-container {
             display: flex;
@@ -51,11 +65,11 @@ body {
         align-items: center;
         flex-direction: column;
         gap: 15px;
-        padding-bottom: 3rem;
         margin: auto;
         width: 100%;
+        padding-bottom: 5rem;
 
-    }
+    
 
     img {
         height: 200px;
@@ -122,6 +136,7 @@ body {
             @include button-style
         }
     }
+}
 
     @include desktop {
         
@@ -151,8 +166,7 @@ body {
                 height: 50%;
                 width: 35%;
                 position: relative;
-                bottom: 230px;
-                left: 0.5px;
+                bottom: 229px;
                 opacity: 0.9;
 
                 address, p {

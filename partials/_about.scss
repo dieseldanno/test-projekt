@@ -9,30 +9,34 @@ body {
     width: 100%;
     .wrapper {
         position: relative;
+        min-height: 100vh;
+        background-image: url(/img/dimma3.png);
+        background-position: center;
+        background-size: cover;
     }
-    .wrapper::before { 
-        content: ""; 
-        position: absolute; 
-        top: 0px; 
-        right: 0px; 
-        bottom: 0px; 
-        left: 0px; 
+    // .wrapper::before { 
+    //     content: ""; 
+    //     position: absolute; 
+    //     top: 0px; 
+    //     right: 0px; 
+    //     bottom: 0px; 
+    //     left: 0px; 
 
-        /* Specify the background image to be used */ 
-        background-image: url( ../img/dimma.jpg); 
-        background-size: cover; 
+    //     /* Specify the background image to be used */ 
+    //     background-image: url( ../img/dimma.jpg); 
+    //     background-size: cover; 
 
-        /* Specify the background image */ 
-        opacity: 0.5; 
-        z-index:-1;
-    } 
+    //     /* Specify the background image */ 
+    //     opacity: 0.5; 
+    //     z-index:-1;
+    // } 
         main {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             gap: 2rem;
-            padding-bottom: 3rem;
+            padding-bottom: 5rem;
             
             aside {
                 background-color: #D9D9D9;
