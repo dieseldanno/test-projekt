@@ -8,11 +8,24 @@ body {
     height: 100vh;
     width: 100%;
     .wrapper {
-        height: min-content;
-        background-image: url(/img/dimma.jpg);
-        background-size: cover;
         position: relative;
-        min-height: 100vh;
+    }
+         .wrapper::before { 
+        content: ""; 
+        position: absolute; 
+        top: 0px; 
+        right: 0px; 
+        bottom: 0px; 
+        left: 0px; 
+
+        /* Specify the background image to be used */ 
+        background-image: url( ../img/dimma.jpg); 
+        background-size: cover; 
+
+        /* Specify the background image */ 
+        opacity: 0.5; 
+        z-index:-1;
+    } 
         main {
             display: flex;
             justify-content: center;
@@ -25,6 +38,10 @@ body {
                 background-color: #D9D9D9;
                 height: min-content;
                 width: 15rem;
+                box-shadow: 5px 5px 10px grey;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
 
                 h2 {
                     text-align: center;
@@ -60,6 +77,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                box-shadow: 5px 5px 10px grey;
                 }
 
             .imgContainer {
@@ -96,8 +114,9 @@ body {
                 }
                 aside {
                     background-color: #D9D9D9;
-                    height: min-content;
-                    width: 40%;
+                    height: 80%;
+                    width: auto;
+                    max-width:20%;
                     margin-left: 7rem;
                     margin-bottom: 7rem;
                     border-radius: 1rem;
@@ -110,4 +129,3 @@ body {
             }
         }
     }
-}
