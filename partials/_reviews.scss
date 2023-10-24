@@ -9,19 +9,13 @@ body {
     width: 100%;
     .wrapper {
         position: relative;
+        min-height: 100vh;
+        background-image: url(/img/dimma3.png);
+        background-position: center;
+        background-size: cover;
         }
-    .wrapper::before { 
-        content: ""; 
-        position: absolute; 
-        top: 0px; 
-        right: 0px; 
-        bottom: 0px; 
-        left: 0px;  
-        background-image: url( ../img/dimma.jpg); 
-        background-size: cover; 
-        opacity: 0.5; 
-        z-index:-1;
-        } 
+
+
         h2 {
         padding: 1rem;
         text-align: center;
@@ -33,7 +27,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-bottom: 3rem;
+            padding-bottom: 5rem;
 
             .cardContainer {
                 height: min-content;

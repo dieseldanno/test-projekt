@@ -7,33 +7,35 @@
 body {
     height: 100vh;
     width: 100%;
-    font-family: $startFont;
-    color: $mainColor;
 
     .wrapper {
         position: relative;
+        min-height: 100vh;
+        background-image: url(/img/dimma3.png);
+        background-position: center;
+        background-size: cover;
     }
-    .wrapper::before { 
-        content: ""; 
-        position: absolute; 
-        top: 0px; 
-        right: 0px; 
-        bottom: 0px; 
-        left: 0px; 
+    // .wrapper::before { 
+    //     content: ""; 
+    //     position: absolute; 
+    //     top: 0px; 
+    //     right: 0px; 
+    //     bottom: 0px; 
+    //     left: 0px;
 
-        /* Specify the background image to be used */ 
-        background-image: url( ../img/dimma.jpg); 
-        background-size: cover; 
+    //     /* Specify the background image to be used */ 
+    //     background-image: url( ../img/dimma.jpg); 
+    //     background-size: cover; 
 
-        /* Specify the background image */ 
-        opacity: 0.5; 
-        z-index:-1;
-        } 
+    //     /* Specify the background image */ 
+    //     opacity: 0.5; 
+    //     z-index:-1;
+    //     } 
 
         .product-wrapper {
             margin: auto;
             width: 80%;
-            padding-bottom: 2.5rem;
+            padding-bottom: 5rem;
         }
     }
 
@@ -51,6 +53,8 @@ body {
         // letter-spacing: 5px;
         text-align: center;
         font-family: $mainFont;
+        color: $mainColor;
+
         font-size: 2.2rem;;
         letter-spacing: 3px;
     }
@@ -63,6 +67,8 @@ body {
     padding: 30px;
 
     p {
+        font-family: $startFont;
+        color: $mainColor;
         text-align: center;
         font-size: 0.9rem;
     }
@@ -100,13 +106,17 @@ body {
         }
     }
 
-    h3 { 
+    h3 {
+        font-family: $mainFont; 
+        color: $mainColor;
         font-size: 1.5rem;
         margin: 5px;
         text-align: center;
     }
 
     h4 {
+        font-family: $startFont;
+        color: $mainColor;
         font-size: 0.7rem;
         margin: 5px;
         text-align: center;

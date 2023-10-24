@@ -10,18 +10,11 @@ body {
 }
 body .wrapper {
   position: relative;
-}
-body .wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url(../img/dimma.jpg);
+  min-height: 100vh;
+  background-image: url(/img/dimma3.png);
+  background-position: center;
   background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
+
 }
 body h2 {
   padding: 1rem;
@@ -34,7 +27,7 @@ body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 body main .cardContainer {
   height: -moz-min-content;
@@ -177,6 +170,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
