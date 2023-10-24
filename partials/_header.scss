@@ -20,6 +20,23 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+    }
+
+    .active {
+        text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: $mainColor;
+            font-weight: bold;
+            
+
+            &:visited {
+                color: $mainColor;
+                text-decoration: none;
+                }
+        }
 
 
     @include desktop {
@@ -27,29 +44,40 @@ header {
             display: none;
             }
         }
-    }
+
 
     @include desktop {
         .active {
             text-decoration: underline;
            }
 
-            a {
-             text-decoration: none;
-             color: $mainColor;
-             font-weight: bold;
+        a {
+            text-decoration: none;
+            color: $mainColor;
+            font-weight: bold;
             
 
-                &:visited {
-                    color: $mainColor;
-                    text-decoration: none;
-                    }
-                &:hover {
-                    transform: scale(1.2)
+            &:visited {
+                color: $mainColor;
+                text-decoration: none;
                 }
+            &:hover {
+                transform: scale(1.2)
+            }
              
+        }
+
+        .material-symbols-outlined:not(.menu) {
+            font-size: 2.5rem;
+            &:hover {
+                transform: scale(1.2) 
+            }
+        }
+
     }
+
 }
+
 
 
 nav {
@@ -70,5 +98,4 @@ nav {
         color: $mainColor;
         text-decoration: none;
     }
-}
 }
