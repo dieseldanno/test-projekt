@@ -189,6 +189,9 @@ footer .footer-links, footer .copyright {
   font-size: 0.8rem;
   font-weight: bold;
 }
+footer .footer-links {
+  padding-bottom: 0.3rem;
+}
 footer a {
   color: #1E1E1E;
   text-decoration: none;
