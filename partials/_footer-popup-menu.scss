@@ -1,0 +1,40 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    .footer-links, .perfume {
+        @include hide-hamburger;
+    }
+
+    .facebook, .instagram {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-family: $mainFont;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 10px;
+    
+    }
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            text-decoration: none;
+        }
+
+        &:active {
+            color: white;
+        }
+    }
+
+}

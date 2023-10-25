@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: $frameColor;
+    font-family: $mainFont;
+    color: $mainColor;
+
+    .close {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    main {
+        display: inline-block;
+
+        .menu-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            a {
+                font-size: 2.3rem;
+                text-decoration: none;
+                color: $mainColor;
+                margin-left: 15px;
+    
+                &:visited {
+                    text-decoration: none;
+                    color: $mainColor;
+                }
+    
+                &:active {
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+}
