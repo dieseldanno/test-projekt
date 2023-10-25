@@ -47,20 +47,11 @@ footer {
 
     .perfume, .facebook, .instagram {
         @include hide;
-        // @include show;
         height: 40px;
         width: 40px;
     }
 
   }
-
-// .main-footer {
-//     display: inline-block;
-// }
-
-// footer {
-    // @include hide;
-    // @include show-footer;
 
 @include desktop {
     footer {
