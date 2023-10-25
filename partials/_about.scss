@@ -30,7 +30,7 @@
           flex-direction: column;
           height: fit-content;
           margin-top: 3rem;
-          box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px #808080;
   
           h2 {
             text-align: center;
@@ -63,10 +63,10 @@
           .card {
             width: 250px;
             height: 375px;
-            background-color: $frameColor;
+            background-color: #ffffff;
             border-radius: 2px;
             overflow: hidden;
-            box-shadow: 5px 5px 10px grey;
+            box-shadow: 5px 5px 10px #808080;
             margin: 15px;
   
             .card-img-top {
