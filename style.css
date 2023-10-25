@@ -27,6 +27,13 @@ body .wrapper main h2 {
   font-family: "Inter", sans-serif;
   margin-left: 10px;
 }
+body .wrapper main a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+body .wrapper main a:visited {
+  text-decoration: none;
+}
 body .wrapper main .cta-button {
   background-color: #1E1E1E;
   color: white;
