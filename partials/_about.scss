@@ -22,7 +22,7 @@
         flex-direction: column;
         gap: 2rem;
   
-        aside {
+        article {
           background-color:$frameColor;
           height: 30rem;
           width: 15rem;
@@ -37,6 +37,7 @@
             font-family: $mainFont;
             font-size: $mainFontSize;
             padding: 1rem;
+            letter-spacing: 2px;
           }
   
           p {
@@ -80,10 +81,12 @@
   
               h3 {
                 font-size: 20px;
+                font-family: $startFont;
               }
   
               h4 {
                 margin-bottom: 10px;
+                font-family: $startFont;
               }
   
               p {
@@ -112,7 +115,7 @@
           text-align: center;
         }
   
-        aside p {
+        article p {
           margin: 1rem;
         }
         
@@ -124,7 +127,7 @@
             font-size: 5rem;
           }
   
-          aside {
+          article {
             background-color: #D9D9D9;
             height: min-content;
             margin-left: 6rem;

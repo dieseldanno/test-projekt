@@ -14,24 +14,7 @@ body {
         background-image: url(../img/dimma3.png);
         background-position: center;
         background-size: cover;
-    }
-    // .wrapper::before { 
-    //     content: ""; 
-    //     position: absolute; 
-    //     top: 0px; 
-    //     right: 0px; 
-    //     bottom: 0px; 
-    //     left: 0px;
-
-    //     /* Specify the background image to be used */ 
-    //     background-image: url( ../img/dimma.jpg); 
-    //     background-size: cover; 
-
-    //     /* Specify the background image */ 
-    //     opacity: 0.5; 
-    //     z-index:-1;
-    //     } 
-
+    } 
         .product-wrapper {
             margin: auto;
             width: 80%;
@@ -48,9 +31,6 @@ body {
     margin-bottom: 15px;
 
     h2 {
-        // font-family: $mainFont;
-        // font-size: 2.8rem;;
-        // letter-spacing: 5px;
         text-align: center;
         font-family: $mainFont;
         color: $mainColor;
