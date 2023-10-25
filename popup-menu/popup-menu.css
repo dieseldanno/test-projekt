@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #D9D9D9;
+  font-family: "Space Grotesk", sans-serif;
+  color: #1E1E1E;
+}
+body .close {
+  font-size: 36px;
+  font-weight: bold;
+}
+body main {
+  display: inline-block;
+}
+body main .menu-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body main .menu-menu a {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #1E1E1E;
+  margin-left: 15px;
+}
+body main .menu-menu a:visited {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+body main .menu-menu a:active {
+  color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+header h1 {
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+}
+header .material-symbols-outlined {
+  margin: 8px;
+}
+header .icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .active {
+  text-decoration: underline;
+}
+header a {
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+header a:visited {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  header .menu {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  header .active {
+    text-decoration: underline;
+  }
+  header a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-weight: bold;
+  }
+  header a:visited {
+    color: #1E1E1E;
+    text-decoration: none;
+  }
+  header a:hover {
+    transform: scale(1.2);
+  }
+  header .material-symbols-outlined:not(.menu) {
+    font-size: 2.5rem;
+  }
+  header .material-symbols-outlined:not(.menu):hover {
+    transform: scale(1.2);
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 799px) {
+  nav {
+    display: none;
+  }
+}
+nav a {
+  margin: 10px;
+  padding: 3px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer-links, footer .perfume {
+  display: none;
+}
+footer .facebook, footer .instagram {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+footer p {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+}
+footer a:active {
+  color: white;
+}/*# sourceMappingURL=popup-menu.css.map */
