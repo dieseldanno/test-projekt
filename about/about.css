@@ -279,6 +279,6 @@ footer .perfume, footer .facebook, footer .instagram {
   footer .social-media {
     display: flex;
     order: 2;
-    gap: 10px;
+    gap: 2px;
   }
 }/*# sourceMappingURL=about.css.map */
